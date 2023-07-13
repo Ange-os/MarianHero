@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 13vh;
+    color: beige;
+}
+header:hover{
+    cursor: pointer;
+}
+header .logo-pricinpal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+}
+.logo{
+    width: 50%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    position: relative;
+    left: 10rem;
+    width: 13rem;
+    height: 7rem;
+}
+.title {
+    margin-top: 4rem;
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+.title h1{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: white;
+}
+.contenedor-text{
+    border-top: solid 2px white;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+}
+.text {
+    margin-top: -1rem;
+    position: relative;
+    left: 12.5rem;
+    background-color: black;
+    font-size: 1.2rem;
+    height: auto;
+    width: 28rem;
+    text-align: center;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+.navegador{
+    margin-top: 10px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navegador ul{
+    list-style-type: none;
+    background-color: rgba(19, 19, 19, 0.863);
+}
+.navegador ul li{
+    margin-top: 1rem;
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+    float: left;
+}
+.navegador ul li a{
+    height: 0.7rem;
+    color: rgb(122, 122, 122);
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-weight: 400;
+}
+.navegador ul li a:hover{
+    box-shadow: rgba(0, 0, 0, 0.322) 0px 0px 30px 1px;
+    color: rgb(238, 238, 238);
+}
+.social-icons{
+    display: none;
+    justify-content: center;
+}
+
+.social-icons ul{
+    padding-left: 0;
+    margin-top: 1rem;
+    background-color: rgba(19, 19, 19, 0.849);
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    right: 31rem;
+    border-radius: 5px;
+}
+.social-icons ul li{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.social-icons ul li a i{
+    border-radius: 30px;
+    font-size: 2.3rem;
+}
+.social-icons ul li a i:hover{
+    box-shadow: rgba(177, 177, 177, 0.555) 0px 0px 10px 1px;
+} 
+.containedor {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.video-container {
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+}
+
+.video-container video {
+    width: 90%;
+    height: auto;
+}
+
+.circle {
+    width: 650px;
+    height: 340px;
+    border-radius: 40%;
+    background-color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle img {
+    max-width: 85%;
+    max-height: 100%;
+    border: 10rem;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio h3{
+    margin-top: 2px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conjunto{
+    margin-top: -3rem;
+}
+.galeria-img {
+    width: 900px;
+    height: 450px;
+    filter: blur(1.5px);
+}
+.galeria-img:hover{
+    cursor: pointer;
+    filter: blur(0);
+}
+.nombre-videoclip{
+    position: relative;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 3.1rem;
+    top: 3rem;
+    transition: 0.1s;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nombre-videoclip h4{
+    font-size: 2.2rem;
+}
+.conjunto:hover .nombre-videoclip{
+    visibility: visible;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.copy-right {
+    font-size: 14px;
+}
