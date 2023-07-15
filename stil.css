@@ -4,10 +4,13 @@
 }
 
 header {
+    position: fixed;
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 13vh;
     color: beige;
+    z-index: 1;
+    transition: top 0.5s;
 }
 header:hover{
     cursor: pointer;
@@ -31,7 +34,7 @@ header .logo-pricinpal {
     height: 7rem;
 }
 .title {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     display: flex;
     width: 50%;
     justify-content: flex-start;
@@ -59,26 +62,30 @@ header .logo-pricinpal {
     text-align: center;
 }
 .container {
+    gap: 10.5rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
 }
 .navegador{
+    position: fixed;
     margin-top: 10px;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    top: 7rem;
+    z-index: 1;
+    transition: top 0.5s;
 }
 .navegador ul{
     list-style-type: none;
     background-color: rgba(19, 19, 19, 0.863);
+    display: inline-block;
 }
 .navegador ul li{
-    margin-top: 1rem;
-    margin-left: 2.8rem;
-    margin-right: 2.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     float: left;
 }
 .navegador ul li a{
@@ -94,15 +101,13 @@ header .logo-pricinpal {
     color: rgb(238, 238, 238);
 }
 .social-icons{
-    display: none;
+    display: flex;
     justify-content: center;
 }
 
 .social-icons ul{
+    background-color: rgba(51, 51, 51, 0.507);
     padding-left: 0;
-    margin-top: 1rem;
-    background-color: rgba(19, 19, 19, 0.849);
-    position: absolute;
     list-style-type: none;
     display: flex;
     right: 31rem;
@@ -113,11 +118,11 @@ header .logo-pricinpal {
     margin-right: 6px;
 }
 .social-icons ul li a i{
-    border-radius: 30px;
-    font-size: 2.3rem;
+    border-radius: 50px;
+    font-size: 1.8rem;
 }
 .social-icons ul li a i:hover{
-    box-shadow: rgba(177, 177, 177, 0.555) 0px 0px 10px 1px;
+    -webkit-text-stroke: 1px #ffffffce;
 } 
 .containedor {
     margin-top: 1rem;
@@ -162,9 +167,21 @@ header .logo-pricinpal {
     align-items: center;
 }
 .portfolio h3{
-    margin-top: 2px;
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    margin-bottom: -1rem;
+}
+.portfolio h3::after, .portfolio h3::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 4.5px;
+    background-color: #000;
+    top: 0.6em;
+}
+.portfolio h3::before{
+    right: 170px;
 }
 .galeria {
     display: flex;
