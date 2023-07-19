@@ -13,7 +13,7 @@ header.addEventListener('click', () => {
     vadition = !vadition;
     if(vadition){
         bienvenida.style.visibility = 'visible';
-        navegador.style.marginTop = '3.2rem'
+        navegador.style.marginTop = '2.1rem'
         navegador.style.height = '2.5rem'
     }else{
         bienvenida.style.visibility = 'hidden';
