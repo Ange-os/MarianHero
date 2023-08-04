@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stil.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        
+    <link rel="stylesheet" href="static/CSS/stil.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@200&display=swap" rel="stylesheet">
     <title>Marianero prod.</title>
 </head>
 <body>
@@ -18,31 +20,37 @@
                     <img src="marianlogo1.png" alt="Logo Marianero" id="logo-header">
                 </div>
                 <div class="title">
-                    <h1 style="color: rgb(255, 255, 255);" >Arte Audiovisual</h1>
+                    <div>
+                        <h1>Arte Audiovisual</h1>
+                        <span class="title-span">Contenido por el Hip-Hop</span>
+                    </div>
+                    <div class="logo-movile">
+                        <i class="bi bi-list" id="menu-desple"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="background-color: black;" class="contenedor-text" id="bienvenida">
-            <p class="text">Bienvenidos: distinctio sapiente voluptatibus nisi dignissimos blanditiis vero quae obcaecati</p>
-        </div>
     </header/>    
-            <nav class="navegador" id="navegador">
-                <ul>
-                    <li><a href="#" class="nav-text">Djset<span class="cartelito">sdsadds d sdhsdas jlasd hdasohd iajdias</span></a></li>
-                    <li><a href="#" class="nav-text">Hottkes<span class="cartelito">djashdsah das ldas ijsdioajdai oisdai</span></a></li>
-                    <li><a href="#" class="nav-text">Documentales<span class="cartelito">hasdksdas hasdas adniasd oaidiadhien</span></a></li>
-                    <li id="contacto"><a href="#" class="nav-text">contacto<span class="cartelito">conectate conmigo</span></a></li>
-                    <li><div class="social-icons" id="icons-socials">
-                            <ul>
-                                <li><a href="https://www.facebook.com/MaHHrian"><i class="bi bi-messenger social-icon" ></i></a></li>
-                                <li><a href="https://www.instagram.com/marian.ero/"><i class="bi bi-instagram social-icon"></i></a></li>
-                                <li><a href="https://www.youtube.com/@marianero"><i class="bi bi-youtube social-icon"></i></a></li>
-                                <li> <a href="https://open.spotify.com/artist/4slIca4ldeA66QQl9L8krL"><i class="bi bi-spotify social-icon"></i></a></li>
-                            </ul>
-                    </div></li>
-                </ul>
-            </nav>
         <main class="container" id="container">
+            <div class="navegador-container" id="contenedo-nav">
+                <nav class="navegador" id="navegador">
+                    <ul>
+                        <li><a href="#" class="nav-text">Djset<span class="cartelito">sdsadds d sdhsdas jlasd hdasohd iajdias</span></a></li>
+                        <li><a href="#" class="nav-text">Hottkes<span class="cartelito">djashdsah das ldas ijsdioajdai oisdai</span></a></li>
+                        <li><a href="#" class="nav-text">Documentales<span class="cartelito">hasdksdas hasdas adniasd oaidiadhien</span></a></li>
+                        <li><a href="#" class="nav-text">Disño/Animaciones<span class="cartelito">conectate conmigo</span></a></li>
+                        <li class="li-icons"><div class="social-icons" id="icons-socials">
+                                <ul>
+                                    <li><a href="https://api.whatsapp.com/send?phone=2664981776&text=Hola,%20quiero%20enviar%20un%20mensaje%20desde%20tu%20sitio%20we"><i class="bi bi-whatsapp" id="btnEnviarWhatsAppp"></i></a></li>
+                                    <li><a href="https://www.instagram.com/marian.ero/"><i class="bi bi-instagram social-icon"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@marianero"><i class="bi bi-youtube social-icon"></i></a></li>
+                                    <li> <a href="https://open.spotify.com/artist/4slIca4ldeA66QQl9L8krL"><i class="bi bi-spotify social-icon"></i></a></li>
+                                </ul>
+                        </div></li>
+                    </ul>
+                </nav>
+            </div>
+            
             <hr style="width: 100%; background-color:white">
             <article class="video-text">
                 <div class="reel">
@@ -62,14 +70,17 @@
                         <div class="nombre-videoclip">
                             <h4>Chaz Un Lio</h4>
                         </div>
-                        <img src="static/img/videoclips/UNLIO.jpg" alt="" class="galeria-img">
-                        <i class="bi bi-youtube icon-youtube"></i>
+                        <a href="https://www.youtube.com/watch?v=AIHyppvcPDk&ab_channel=ELEGANGTESPORT" target="_blank">
+                            <img src="static/img/videoclips/UNLIO.jpg" alt="" class="galeria-img">
+                            <i class="bi bi-youtube icon-youtube"></i>
+                        </a>
+                        
                     </div>
                     <div class="conjunto">
                         <div class="nombre-videoclip">
                             <h4>Mesti 2 gramos</h4>
                         </div>
-                            <a href="#" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=AIHyppvcPDk&ab_channel=ELEGANGTESPORT" target="_blank">
                                 <img src="static/img/videoclips/2GR.jpg" alt="" class="galeria-img">
                                 <i class="bi bi-youtube icon-youtube"></i>
                             </a>
@@ -78,7 +89,7 @@
                         <div class="nombre-videoclip">
                             <h4>Ahi vamos de nuevo</h4>
                         </div>
-                            <a href="">
+                            <a href="https://www.youtube.com/watch?v=q6ViD8G4TYc&ab_channel=PBCProd" target="_blank">
                                 <img src="static/img/videoclips/ahivamos.jpg" alt="" class="galeria-img">
                                 <i class="bi bi-youtube icon-youtube"></i>
                             </a>
@@ -87,36 +98,50 @@
                         <div class="nombre-videoclip">
                             <h4>Pimienta Negra</h4>
                         </div>
-                        <img src="static/img/videoclips/PIMIENTANEGRA.jpg" alt="" class="galeria-img">
-                        <i class="bi bi-youtube icon-youtube"></i>
+                        <a href="https://www.youtube.com/watch?v=aNXFoc_CtG4&ab_channel=ELEGANGTESPORT" target="_blank">
+                            <img src="static/img/videoclips/PIMIENTANEGRA.jpg" alt="" class="galeria-img">
+                            <i class="bi bi-youtube icon-youtube"></i>
+                        </a>
+
                     </div>                    
                     <div class="conjunto">
                         <div class="nombre-videoclip">
                             <h4>Chaz DOOM</h4>
                         </div>
-                        <img src="static/img/videoclips/DOOM.jpg" alt="" class="galeria-img">
-                        <i class="bi bi-youtube icon-youtube"></i>
+                        <a href="https://www.youtube.com/watch?v=ZKemgogPZn4&ab_channel=ELEGANGTESPORT" target="_blank">
+                            <img src="static/img/videoclips/DOOM.jpg" alt="" class="galeria-img">
+                            <i class="bi bi-youtube icon-youtube"></i>
+                        </a>
+
                     </div>                    
                     <div class="conjunto">
                         <div class="nombre-videoclip">
                             <h4>Mesti Scentinelas</h4>
                         </div>
-                        <img src="static/img/videoclips/SCENTINELAS.jpg" alt="" class="galeria-img">
-                        <i class="bi bi-youtube icon-youtube"></i>
+                        <a href="https://www.youtube.com/watch?v=7VJQBkEMdmk&ab_channel=ELEGANGTESPORT" target="_blank">
+                            <img src="static/img/videoclips/SCENTINELAS.jpg" alt="" class="galeria-img">
+                            <i class="bi bi-youtube icon-youtube"></i>
+                        </a>
+
                     </div>                    
                     <div class="conjunto">
                         <div class="nombre-videoclip">
                             <h4>Mesti Slow Life</h4>
                         </div>
-                        <img src="static/img/videoclips/SLOWLIFE.jpg" alt="" class="galeria-img">
-                        <i class="bi bi-youtube icon-youtube"></i>
+                        <a href="https://www.youtube.com/watch?v=-wg9AOs14k0" target="_blank">
+                            <img src="static/img/videoclips/SLOWLIFE.jpg" alt="" class="galeria-img">
+                            <i class="bi bi-youtube icon-youtube"></i>
+                        </a>
                     </div>                    
                     <div class="conjunto">
                         <div class="nombre-videoclip">
                             <h4>So Fine</h4>
                         </div>
-                        <img src="static/img/videoclips/SOFINE.jpg" alt="" class="galeria-img">
-                        <i class="bi bi-youtube icon-youtube"></i>
+                        <a href="https://www.youtube.com/watch?v=ToV9r_tkmK8&ab_channel=Lawdy" target="_blank">
+                            <img src="static/img/videoclips/SOFINE.jpg" alt="" class="galeria-img">
+                            <i class="bi bi-youtube icon-youtube"></i>
+                        </a>
+
                     </div>                    
                 </div>
             </article>
@@ -126,6 +151,6 @@
         <p class="copy-right">© 2023 Marianero prod. Todos los derechos reservados.</p>
     </footer>
 </section> 
-<script src="ma.js"></script>
+<script src="JS/ma.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,78 +20,83 @@ header:hover{
     cursor: pointer;
 }
 header .logo-pricinpal {
+    background-color: #000;
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
+    margin-bottom: 2rem;
 }
 .logo{
     width: 50%;
     padding-top: 5px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 1rem;
 }
 .logo img {
     height: 4.8rem;
     width: 9rem;
-    margin-right: 11rem;
+    margin-left: 15rem;
 }
 .title {
     display: flex;
     width: 50%;
     justify-content: flex-start;
     align-items: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
 }
 .title h1{
+    margin-bottom: -8px;
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: white;
 }
-.contenedor-text{
-    border-top: solid 2px white;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    height: 2rem;
+.title-span{
+    color: white;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 0.5px #f9d166;
 }
-.text {
-    margin-top: -1rem;
-    position: relative;
-    left: 11.5rem;
-    background-color: black;
-    font-size: 1rem;
-    height: auto;
-    width: 28rem;
-    text-align: center;
+.logo-movile{
+    visibility: hidden;
+    width: 7rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-movile i {
+    font-size: 4rem;
 }
 .container {
-    gap: 10.5rem;
+    gap: 8rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
 }
+.navegador-container{
+    display: flex;
+    justify-content: center;
+}
 .navegador{
+    margin-top: 1rem;
     position: fixed;
-    margin-top: 10px;
-    height: 1rem;
-    right: 50%;
-    transform: translateX(50%);
     top: 5rem;
+    height: 1rem;
     z-index: 1;
     transition: top 0.5s;
 }
 .navegador ul{
+    padding-left: 0.8rem;
+    padding-right: 1rem;
     list-style-type: none;
-    background-color: rgba(19, 19, 19, 0.863);
+    background-color: rgba(65, 65, 65, 0.863);
     display: inline-block;
     border-radius: 2px;
 }
 .navegador ul li{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     float: left;
 }
 .navegador ul li a{
@@ -133,6 +140,8 @@ header .logo-pricinpal {
 }
 
 .social-icons ul{
+    background-color: rgba(65, 65, 65, 0.863);
+    padding-right: 0;
     padding-left: 0;
     list-style-type: none;
     display: flex;
@@ -140,8 +149,8 @@ header .logo-pricinpal {
     border-radius: 5px;
 }
 .social-icons ul li{
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .social-icons ul li a i{
     border-radius: 50px;
@@ -258,9 +267,9 @@ header .logo-pricinpal {
 }
 .icon-youtube{
     position: absolute;
-    font-size: 10rem;
-    right: 46%;
-    transform: translateY(50%);
+    font-size: 6rem;
+    right: 47%;
+    transform: translateY(100%);
     z-index: 1;
     color: #ff00009a;
     visibility: hidden;
@@ -279,3 +288,146 @@ footer {
 .copy-right {
     font-size: 14px;
 }
+@media screen and (max-width: 768px) {
+    header {
+        height: 8vh;
+    }
+    .logo-pricinpal{
+        margin-bottom: 0;
+    }
+    .logo{
+        width: 20%;
+    }
+    .logo img {
+        margin-top: 1rem;
+        margin-left: 0;
+        height: 3rem;
+        width: 6.5rem;
+    }
+    .title{
+        width: 60%;
+        margin-left: 0;
+    }
+    .title h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    
+    .title-span {
+        font-size: 1rem;
+    }
+    .logo-movile{
+        visibility: visible;
+    }
+    .container{
+        gap: 5.5rem;
+    }
+    .navegador-container{
+        visibility: hidden;
+    }
+    .navegador ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegador ul li a {
+        font-size: 2rem;
+    }
+    .social-icons{
+        justify-content: flex-start;
+    }
+    .social-icons ul{
+        display: inline-block;
+    }
+    .social-icons ul li{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .social-icons ul li a i{
+        font-size: 2rem;
+    }
+    .nav-text .cartelito {
+        width: 100px;
+    }
+    .video-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .reel{
+        display: flex;
+        width: auto;
+    }
+    .reel video{
+        width:100%;
+    }
+    
+    .texto-reel {
+        width: 100%;
+        padding: 0;
+    }
+    .portfolio{
+        margin-top: 4rem;
+    }
+    .galeria{
+        margin-top: 3rem;
+    }
+    .galeria-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .nombre-videoclip h4 {
+        font-size: 1.2rem;
+    }
+    
+    .icon-youtube {
+        font-size: 4rem;
+    }
+}
+
+/* Media query para pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: 8vh;
+    }
+    
+    .logo img {
+        height: 4rem;
+        width: 8rem;
+    }
+    
+    .title h1 {
+        font-size: 2.8rem;
+    }
+    
+    .title-span {
+        font-size: 1.2rem;
+    }
+    
+    .navegador ul li a {
+        font-size: 1.2rem;
+    }
+    
+    .nav-text .cartelito {
+        width: 150px;
+    }
+    
+    .reel video {
+        width: 70%;
+    }
+    
+    .texto-reel {
+        width: 30%;
+        padding: 0 1rem;
+    }
+    
+    .nombre-videoclip h4 {
+        font-size: 1.6rem;
+    }
+    
+    .icon-youtube {
+        font-size: 5rem;
+    }
+}
+
