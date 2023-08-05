@@ -265,6 +265,10 @@ header .logo-pricinpal {
 .conjunto:hover .nombre-videoclip{
     visibility: visible;
 }
+.conjunto:active .nombre-videoclip {
+    visibility: visible;
+    transition: 0.1s;
+}
 .icon-youtube{
     position: absolute;
     font-size: 6rem;
