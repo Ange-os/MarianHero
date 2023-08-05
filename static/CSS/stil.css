@@ -60,7 +60,7 @@ header .logo-pricinpal {
 }
 .logo-movile{
     visibility: hidden;
-    width: 7rem;
+    width: 6rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -380,13 +380,19 @@ footer {
         width: 100%;
         height: auto;
     }
+    .nombre-videoclip{
+        height: 2.5rem;
+        top: 3rem;
+    }
     
     .nombre-videoclip h4 {
         font-size: 1.2rem;
     }
     
     .icon-youtube {
-        font-size: 4rem;
+        right: 43%;
+        font-size: 3.5rem;
+        transform: translateY(70%);
     }
 }
 
